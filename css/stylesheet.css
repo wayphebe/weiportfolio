@@ -1,0 +1,31 @@
+@charset "utf-8";
+header
+{
+list-style-type:none;
+margin:0;
+padding:0;
+padding-top:6px;
+padding-bottom:6px;
+}
+h1
+{
+display:inline;
+}
+a:link,a:visited
+{
+font-weight:bold;
+color:rgba(39, 71, 77, 0.979);
+background-color:#af3bdd80;
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform:uppercase;
+}
+a:hover,a:active
+{
+background-color:rgb(133, 117, 134);
+}
+img
+{
+    width: 220px;height:150px;
+}
