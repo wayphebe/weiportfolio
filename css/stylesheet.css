@@ -21,8 +21,8 @@ h2 + h3{
     display: -webkit-flex;
     
 }
-.item1, .item2, .item3{
-    align-self: auto;
+.item4, .item5, .item6{
+    align-self: center;
     
 }
 h3>strong{
@@ -75,6 +75,95 @@ d1 + d2{
     justify-content:flex-start;}
 .t1, .t2{
     align-self:auto;
+}
+
+
+@media only screen and (max-width: 750px) {
+    /* for mobile*/
+
+    .body{
+        background-color: grey;
+    }
+    /* typography */
+    h2 {
+        font-size: 30px;
+    
+    }
+    .item1, .item2, .item3, .item4{
+        font-size: 12px;
+    }
+
+    #name{
+        font-size: 11px;
+    }
+
+    #description{
+        font-size: 11px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+
+
+    /*layout*/
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .item1, .item2, .item3, .item4{
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .po{
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+    }
+    .item4, .item5, .item6{
+        align-items: flex-ends;
+    }
+
+
+    
+    /*change layout*/
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px )and (orientaiton: landscape) {
+    /* wider than its height */
+    h2 {
+        font-size: 80px;
+       
+    }
+    #name{
+        font-size: 36px;
+    }
+     /*change layout or user prederences*/
+    
+    #description{
+        font-size: 50px;
+    }
+    .po{
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+    }
+    .nav{
+        display: flex;
+        display:-webkit-flex;
+        flex-direction: row;
+    
+    }
+    .item1, .item2, .item3, .item4{
+
+
+
+    }
+
+   
+
+
 }
 
     
