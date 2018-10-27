@@ -121,8 +121,9 @@ d1 + d2{
         display: -webkit-flex;
         flex-direction: column;
     }
-    .item4, .item5, .item6{
-        align-items: flex-ends;
+    .item4, .item5, .item6, .item7, .item8, .item9{
+        align-items:auto ;
+
     }
 
 
@@ -130,7 +131,7 @@ d1 + d2{
     /*change layout*/
 
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px )and (orientaiton: landscape) {
+@media only screen and (min-width: 750px) and (max-width: 1024px )and (orientaiton: landscape) {
     /* wider than its height */
     h2 {
         font-size: 80px;
@@ -147,19 +148,26 @@ d1 + d2{
     .po{
         display: flex;
         display: -webkit-flex;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
+    .po>div {
+        width: 100px;
+        margin: 10px;
+
+    }
+    
+  
+
+
     .nav{
         display: flex;
         display:-webkit-flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
     
     }
-    .item1, .item2, .item3, .item4{
+   
 
-
-
-    }
+    
 
    
 
